@@ -92,9 +92,9 @@
         </record>
 
 
-        <!-- Animal Tree View -->
-    <record id="view_mascota_dueño_tree" model="ir.ui.view">
-        <field name="name">view.mascota.dueño.tree</field>
+        <!-- Animaduenoe View -->
+    <record id="view_mascota_dueno_tree" model="ir.ui.view">
+        <field name="name">view.mascota.dueno.tree</field>
         <field name="model">mascota</field>
         <field name="inherit_id" ref="mascota.view_mascota_tree" />
         <field name="arch" type="xml">
@@ -104,9 +104,9 @@
         </field>
     </record>
 
-    <!-- Animal Form View -->
-    <record id="view_mascota_dueño_form" model="ir.ui.view">
-        <field name="name">view.mascota.dueño.form</field>
+    <!-- Animaduenom View -->
+    <record id="view_mascota_dueno_form" model="ir.ui.view">
+        <field name="name">view.mascota.dueno.form</field>
         <field name="model">mascota</field>
         <field name="inherit_id" ref="mascota.view_mascota_form" />
         <field name="arch" type="xml">
@@ -116,9 +116,9 @@
         </field>
     </record>
 
-    <!-- Animal Kanban View -->
-    <record id="view_mascota_dueño_kanban" model="ir.ui.view">
-        <field name="name">view.mascota.dueño.kanban</field>
+    <!-- Animal duenon View -->
+    <record id="view_mascota_dueno_kanban" model="ir.ui.view">
+        <field name="name">view.mascota.dueno.kanban</field>
         <field name="model">mascota</field>
         <field name="inherit_id" ref="mascota.view_mascota_kanban" />
         <field name="arch" type="xml">
@@ -132,8 +132,8 @@
     </record>
 
     <!-- Animal Search View -->
-    <record id="view_mascota_owner_search" model="ir.ui.view">
-        <field name="name">view.mascota.dueño.search</field>
+    <record id="view_mascota_dueno_search" model="ir.ui.view">
+        <field name="name">view.mascota.dueno.search</field>
         <field name="model">mascota</field>
         <field name="inherit_id" ref="mascota.view_mascota_search" />
         <field name="arch" type="xml">
