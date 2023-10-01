@@ -15,6 +15,6 @@ class mascota(models.Model):
     sexo = fields.Char()
     edad = fields.Char()
     pelaje = fields.Char()
-    image = fields.Binary(
+    imagen = fields.Binary(
         attachment=True, help="Imagen de mascota"
     )
