@@ -10,7 +10,7 @@
                     <field name="nombre" />
                     <field name="especie" />
                     <field name="raza" />
-                    <field name="color" />
+                    <field name="pelaje" />
                     <field name="sexo" />
                     <field name="edad" />
                 </tree>
@@ -77,7 +77,7 @@
                 />
                     <field name="especie" />
                     <field name="raza" />
-                    <field name="color" />
+                    <field name="pelaje" />
                     <separator />
                     <field name="sexo" />
                     <separator />
