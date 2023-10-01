@@ -125,14 +125,6 @@
             <field name="nombre" position="after">
                 <field name="partner_id" />
             </field>
-            <filter name="sexo" position="before">
-                <filter
-                    name="partner_id"
-                    string="Dueño"
-                    domain=""
-                    context="{'group_by': 'partner_id'}"
-                />
-            </filter>
         </field>
     </record>
 
