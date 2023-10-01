@@ -116,21 +116,6 @@
         </field>
     </record>
 
-    <!-- Animal duenon View -->
-    <record id="view_mascota_dueno_kanban" model="ir.ui.view">
-        <field name="name">view.mascota.dueno.kanban</field>
-        <field name="model">mascota</field>
-        <field name="inherit_id" ref="sistema_ave_mascotas.view_mascota_kanban" />
-        <field name="arch" type="xml">
-            <field name="nombre" position="after">
-                <field name="partner_id" />
-            </field>
-            <xpath expr="//div[hasclass('oe_kanban_details')]/ul" position="inside">
-                <li t-if="record.partner_id.raw_value"><field name="partner_id" /></li>
-            </xpath>
-        </field>
-    </record>
-
     <!-- Animal Search View -->
     <record id="view_mascota_dueno_search" model="ir.ui.view">
         <field name="name">view.mascota.dueno.search</field>
@@ -150,7 +135,6 @@
             </filter>
         </field>
     </record>
-
 
         <record id="action_mascota" model="ir.actions.act_window">
             <field name="name">mascotas</field>
