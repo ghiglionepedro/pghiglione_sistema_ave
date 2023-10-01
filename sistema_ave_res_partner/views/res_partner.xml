@@ -1,0 +1,20 @@
+<odoo>
+    <data>
+        <record model="ir.ui.view" id="pghiglione_res_partner_contact_form">
+            <field name="name">pghiglione_res_partner_contact_form</field>
+            <field name="model">res.partner</field>
+            <field name="inherit_id" ref="base.view_partner_form"/>
+            <field name="arch" type="xml">
+                <form string="Contacto personalizado">
+                    <!-- Ocultar el campo Compañía -->
+                    <field name="company_id" invisible="1"/>
+
+                    <!-- Establecer la selección predeterminada a "Individual" -->
+                    <field name="type" default="individual"/>
+
+                    <!-- Otras personalizaciones si es necesario -->
+                </form>
+            </field>
+        </record>
+    </data>
+</odoo>
