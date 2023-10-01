@@ -96,7 +96,7 @@
     <record id="view_mascota_dueno_tree" model="ir.ui.view">
         <field name="name">view.mascota.dueno.tree</field>
         <field name="model">mascota</field>
-        <field name="inherit_id" ref="mascota.view_mascota_tree" />
+        <field name="inherit_id" ref="mascotas.view_mascota_tree" />
         <field name="arch" type="xml">
             <field name="pelaje" position="after">
                 <field name="partner_id" />
@@ -108,7 +108,7 @@
     <record id="view_mascota_dueno_form" model="ir.ui.view">
         <field name="name">view.mascota.dueno.form</field>
         <field name="model">mascota</field>
-        <field name="inherit_id" ref="mascota.view_mascota_form" />
+        <field name="inherit_id" ref="mascotas.view_mascota_form" />
         <field name="arch" type="xml">
             <field name="especie" position="after">
                 <field name="partner_id" />
@@ -120,7 +120,7 @@
     <record id="view_mascota_dueno_kanban" model="ir.ui.view">
         <field name="name">view.mascota.dueno.kanban</field>
         <field name="model">mascota</field>
-        <field name="inherit_id" ref="mascota.view_mascota_kanban" />
+        <field name="inherit_id" ref="mascotas.view_mascota_kanban" />
         <field name="arch" type="xml">
             <field name="nombre" position="after">
                 <field name="partner_id" />
