@@ -98,7 +98,7 @@
         <field name="model">mascota</field>
         <field name="inherit_id" ref="mascota.view_mascota_tree" />
         <field name="arch" type="xml">
-            <field name="color_id" position="after">
+            <field name="pelaje" position="after">
                 <field name="partner_id" />
             </field>
         </field>
@@ -110,7 +110,7 @@
         <field name="model">mascota</field>
         <field name="inherit_id" ref="mascota.view_mascota_form" />
         <field name="arch" type="xml">
-            <field name="species_id" position="after">
+            <field name="especie" position="after">
                 <field name="partner_id" />
             </field>
         </field>
@@ -122,7 +122,7 @@
         <field name="model">mascota</field>
         <field name="inherit_id" ref="mascota.view_mascota_kanban" />
         <field name="arch" type="xml">
-            <field name="name" position="after">
+            <field name="nombre" position="after">
                 <field name="partner_id" />
             </field>
             <xpath expr="//div[hasclass('oe_kanban_details')]/ul" position="inside">
@@ -137,10 +137,10 @@
         <field name="model">mascota</field>
         <field name="inherit_id" ref="mascota.view_mascota_search" />
         <field name="arch" type="xml">
-            <field name="name" position="after">
+            <field name="nombre" position="after">
                 <field name="partner_id" />
             </field>
-            <filter name="gender" position="before">
+            <filter name="sexo" position="before">
                 <filter
                     name="partner_id"
                     string="Dueño"
