@@ -5,15 +5,14 @@
             <field name="model">res.partner</field>
             <field name="inherit_id" ref="base.view_partner_form"/>
             <field name="arch" type="xml">
-                <form string="Contacto personalizado">
-                    <!-- Ocultar el campo Compañía -->
-                    <field name="company_id" invisible="1"/>
+                 <xpath expr="//field[@name='parent_id']" position="attributes">
+                        <attribute name="invisible">1</attribute> <!-- Ocultar el campo Compañía -->
+                    </xpath>
 
-                    <!-- Establecer la selección predeterminada a "Individual" -->
-                    <field name="type" default="individual"/>
+                    <xpath expr="//field[@name='company_type']" position="attributes">
+                        <attribute name="default">individual</attribute> <!-- Establecer selección predeterminada -->
+                    </xpath>
 
-                    <!-- Otras personalizaciones si es necesario -->
-                </form>
             </field>
         </record>
     </data>
