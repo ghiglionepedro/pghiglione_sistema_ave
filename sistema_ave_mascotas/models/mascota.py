@@ -18,3 +18,4 @@ class mascota(models.Model):
     imagen = fields.Binary(
         attachment=True, help="Imagen de mascota"
     )
+    active = fields.Boolean(default=True)
