@@ -4,14 +4,14 @@
     <menuitem
         id="menu_root"
         name="Mascotas"
-        action="action_animal"
+        action="action_mascota"
         sequence="10"
         web_icon="animal,static/description/icon.png"
     />
     <menuitem
         id="menu_animal"
         name="Mascotas"
-        action="action_animal"
+        action="action_mascota"
         sequence="10"
         parent="menu_root"
     />
