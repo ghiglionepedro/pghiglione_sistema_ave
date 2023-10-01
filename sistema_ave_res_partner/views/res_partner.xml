@@ -13,6 +13,14 @@
                         <attribute name="default">individual</attribute> <!-- Establecer selección predeterminada -->
                     </xpath>
 
+                    <xpath expr="//field[@name='l10n_latam_identification_type_id']" position="attributes">
+                        <attribute name="default">DNI</attribute> <!-- Establecer selección predeterminada -->
+                    </xpath>
+
+                    <xpath expr="//field[@name='l10n_ar_afip_responsibility_type_id']" position="attributes">
+                        <attribute name="default">Consumidor Final</attribute> <!-- Establecer selección predeterminada -->
+                    </xpath>
+
             </field>
         </record>
     </data>
