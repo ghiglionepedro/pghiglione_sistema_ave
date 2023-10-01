@@ -19,3 +19,7 @@ class mascota(models.Model):
         attachment=True, help="Imagen de mascota"
     )
     active = fields.Boolean(default=True)
+
+    partner_id = fields.Many2one(
+        "res.partner", string="Dueño", index=True, tracking=True
+    )

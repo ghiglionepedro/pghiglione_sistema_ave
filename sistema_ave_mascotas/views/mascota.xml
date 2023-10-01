@@ -91,6 +91,67 @@
             </field>
         </record>
 
+
+        <!-- Animal Tree View -->
+    <record id="view_mascota_dueño_tree" model="ir.ui.view">
+        <field name="name">view.mascota.dueño.tree</field>
+        <field name="model">mascota</field>
+        <field name="inherit_id" ref="mascota.view_mascota_tree" />
+        <field name="arch" type="xml">
+            <field name="color_id" position="after">
+                <field name="partner_id" />
+            </field>
+        </field>
+    </record>
+
+    <!-- Animal Form View -->
+    <record id="view_mascota_dueño_form" model="ir.ui.view">
+        <field name="name">view.mascota.dueño.form</field>
+        <field name="model">mascota</field>
+        <field name="inherit_id" ref="mascota.view_mascota_form" />
+        <field name="arch" type="xml">
+            <field name="species_id" position="after">
+                <field name="partner_id" />
+            </field>
+        </field>
+    </record>
+
+    <!-- Animal Kanban View -->
+    <record id="view_mascota_dueño_kanban" model="ir.ui.view">
+        <field name="name">view.mascota.dueño.kanban</field>
+        <field name="model">mascota</field>
+        <field name="inherit_id" ref="mascota.view_mascota_kanban" />
+        <field name="arch" type="xml">
+            <field name="name" position="after">
+                <field name="partner_id" />
+            </field>
+            <xpath expr="//div[hasclass('oe_kanban_details')]/ul" position="inside">
+                <li t-if="record.partner_id.raw_value"><field name="partner_id" /></li>
+            </xpath>
+        </field>
+    </record>
+
+    <!-- Animal Search View -->
+    <record id="view_mascota_owner_search" model="ir.ui.view">
+        <field name="name">view.mascota.dueño.search</field>
+        <field name="model">mascota</field>
+        <field name="inherit_id" ref="mascota.view_mascota_search" />
+        <field name="arch" type="xml">
+            <field name="name" position="after">
+                <field name="partner_id" />
+            </field>
+            <filter name="gender" position="before">
+                <filter
+                    name="partner_id"
+                    string="Dueño"
+                    domain=""
+                    context="{'group_by': 'partner_id'}"
+                />
+            </filter>
+        </field>
+    </record>
+
+
         <record id="action_mascota" model="ir.actions.act_window">
             <field name="name">mascotas</field>
             <field name="res_model">mascota</field>
