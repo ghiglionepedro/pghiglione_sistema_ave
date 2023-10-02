@@ -4,6 +4,7 @@
     "name": "Sistema AVE - Res Partner",
     "version": "15.0.0.0.0",
     "license": "AGPL-3",
+    'category': 'Sales',
     "summary": "Sistema Ave - Res Partner",
     "author": "Ghiglione Pedro Matias",
     "maintainer": "pghiglione",

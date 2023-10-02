@@ -7,11 +7,12 @@
     "summary": "Adminsitración de mascotas",
     "author": "Ghiglione Pedro Matias",
     "maintainer": "Ghiglione Pedro Matias",
+    'category': 'Sales',
     "website": "https://quimerasoftware.ar",
     "depends": ["base","contacts"],
     "data": [
-        "views/mascota.xml",
         "views/menu.xml",
+        "views/mascota.xml",
     ],
     "application": True,
     "development_status": "Beta",
