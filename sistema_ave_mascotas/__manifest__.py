@@ -8,7 +8,7 @@
     "author": "Ghiglione Pedro Matias",
     "maintainer": "Ghiglione Pedro Matias",
     "website": "https://quimerasoftware.ar",
-    "depends": ["contacts"],
+    "depends": ["base","contacts"],
     "data": [
         "views/mascota.xml",
         "views/menu.xml",
