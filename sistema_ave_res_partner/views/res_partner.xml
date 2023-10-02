@@ -23,12 +23,12 @@
                         <button
                             class="oe_stat_button"
                             type="object"
-                            name="action_view_animals"
+                            name="action_view_mascotas"
                             icon="fa-pencil-square-o"
                             context="{'default_partner_id': id}"
                         >
                             <div class="o_stat_info">
-                                <field name="animal_count" class="o_stat_value" />
+                                <field name="mascotas_count" class="o_stat_value" />
                                 <span class="o_stat_text"> Animals</span>
                             </div>
                         </button>
