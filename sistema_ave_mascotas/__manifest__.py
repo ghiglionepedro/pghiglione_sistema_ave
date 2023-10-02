@@ -13,6 +13,8 @@
     "data": [
         "views/menu.xml",
         "views/mascota.xml",
+        "security/res_groups.xml",
+        "security/ir.model.access.csv",
     ],
     "application": True,
     "development_status": "Beta",

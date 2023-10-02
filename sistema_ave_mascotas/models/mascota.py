@@ -7,7 +7,7 @@ class mascota(models.Model):
     _name = "mascota"
     _description = "Mascota"
     _inherit = ["mail.thread", "mail.activity.mixin"]
-    _order = "name"
+    _order = "nombre"
 
     especie = fields.Char()
     raza = fields.Char()
