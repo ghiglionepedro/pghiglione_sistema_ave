@@ -1,3 +1,2 @@
 id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
-access_mascotas_user,mascota.user,model_mascota_species,base.group_user,1,1,1,1
-access_mascotas_manager,mascota.manager,model_mascota_species,animal.group_animal_manager,1,1,1,1
+access_mascotas_user,sistema_ave_mascotas.user,model_mascotas,base.group_user,1,1,1,1
