@@ -9,7 +9,7 @@
     "author": "Ghiglione Pedro Matias",
     "maintainer": "pghiglione",
     "website": "https://quimerasoftware.ar",
-    "depends": ["mail"],
+    "depends": ["mail","sistema_ave_mascotas"],
     "data": [
         "views/res_partner.xml",
     ],
