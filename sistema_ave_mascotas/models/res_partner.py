@@ -6,15 +6,15 @@ from odoo import api, fields, models
 class ResPartner(models.Model):
     _inherit = "res.partner"
 
+    mascota_ids = fields.One2many("mascota", "partner_id", string="Mascotas")
+    mascotas_count = fields.Integer(
+        compute=_compute_animal_count(), string="Número de mascotas", store=True
+    )
+
     @api.depends("mascota_ids")
     def _compute_animal_count(self):
         for rec in self:
             rec.animal_count = len(rec.mascota_ids)
-
-    mascota_ids = fields.One2many("mascota", "partner_id", string="Mascotas")
-    mascotas_count = fields.Integer(
-        compute=_compute_animal_count, string="Número de mascotas", store=True
-    )
 
     def action_view_mascotas(self):
         xmlid = "sistema_ave_mascotas.action_mascota"
