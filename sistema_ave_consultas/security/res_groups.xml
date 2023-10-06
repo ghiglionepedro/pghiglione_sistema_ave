@@ -1,0 +1,12 @@
+<odoo>
+
+    <!-- Animal groups -->
+    <record id="group_consultas_manager" model="res.groups">
+        <field name="name">Administrador</field>
+        <field
+            name="users"
+            eval="[(4, ref('base.user_root')), (4, ref('base.user_admin'))]"
+        />
+    </record>
+
+</odoo>

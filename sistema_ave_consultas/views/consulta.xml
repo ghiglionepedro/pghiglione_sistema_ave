@@ -1,0 +1,40 @@
+<odoo>
+
+
+    <data>
+        <!-- Vista de formulario para análisis clínicos -->
+        <record id="view_analisis_clinicos_form" model="ir.ui.view">
+            <field name="name">consultas.form</field>
+            <field name="model">consultas</field>
+            <field name="arch" type="xml">
+                <form string="Análisis Clínicos">
+                    <sheet>
+                        <group>
+                            <field name="name" string="Nombre del análisis" required="1"/>
+                            <field name="fecha_realizacion" string="Fecha de Realización" required="1"/>
+                            <field name="tipo_analisis" string="Tipo de Análisis"/>
+                            <field name="descripcion" string="Descripción" widget="html"/>
+                            <!-- Otros campos de análisis clínicos que desees agregar -->
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <!-- Acción de menú para abrir el formulario de análisis clínicos -->
+        <record id="action_analisis_clinicos" model="ir.actions.act_window">
+            <field name="name">Análisis Clínicos</field>
+            <field name="res_model">consultas</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+                <p class="oe_view_nocontent_create">
+                    Haga clic en el botón de creación para agregar un nuevo análisis clínico.
+                </p>
+            </field>
+        </record>
+
+        <!-- Menú para acceder a los análisis clínicos -->
+        <menuitem id="menu_analisis_clinicos" name="Análisis Clínicos" parent="your_parent_menu_id" action="action_analisis_clinicos"/>
+    </data>
+
+</odoo>

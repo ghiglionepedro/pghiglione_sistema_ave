@@ -23,3 +23,25 @@ class mascota(models.Model):
     partner_id = fields.Many2one(
         "res.partner", string="Dueño", index=True, tracking=True
     )
+
+    consulta_ids = fields.Many2many(
+        comodel_name='consulta.medica',
+        string='Consultas Médicas',
+        compute='_compute_consulta_ids',
+        inverse='_inverse_consulta_ids',
+        store=True,
+    )
+
+    @api.depends('consulta_ids')
+    def _compute_consulta_ids(self):
+        for mascota in self:
+            mascota.consulta_ids = self.env['consulta.medica'].search([
+                ('entity_type', '=', 'mascota'),
+                ('entity_id', '=', mascota.id),
+            ])
+
+    def _inverse_consulta_ids(self):
+        for mascota in self:
+            for consulta in mascota.consulta_ids:
+                consulta.entity_type = 'mascota'
+                consulta.entity_id = mascota.id

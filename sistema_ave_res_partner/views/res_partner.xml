@@ -29,7 +29,7 @@
                         >
                             <div class="o_stat_info">
                                 <field name="mascotas_count" class="o_stat_value" />
-                                <span class="o_stat_text"> Animals</span>
+                                <span class="o_stat_text"> Mascotas</span>
                             </div>
                         </button>
                     </div>
