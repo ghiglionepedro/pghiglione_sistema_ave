@@ -9,7 +9,7 @@
     "maintainer": "Ghiglione Pedro Matias",
     'category': 'Sales',
     "website": "https://quimerasoftware.ar",
-    "depends": ["base","contacts","sistema_ave_mascotas"],
+    "depends": ["base","contacts","sistema_ave_mascotas","sistema_ave_res_partner"],
     "data": [
         "views/menu.xml",
         "views/mascota.xml",
